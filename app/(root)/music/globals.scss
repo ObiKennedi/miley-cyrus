@@ -1,0 +1,50 @@
+.music{
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 80vh;
+    >h3{
+        font-size: 40px;
+        font-weight: 300;
+        margin: auto;
+        width: 20%;
+        @media (max-width:900px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 30%;
+        margin: auto;
+        @media (max-width:900px) {
+            width: 100%;
+        }
+        >a{
+            width: 100%;
+            background: #BDBCBC;
+            text-decoration: none;
+            height: 10vh;
+            border-radius: 10px;
+            >div{
+                width: 50%;
+                display: flex;
+                margin: auto;
+                padding: 10px;
+                gap: 20px;
+                >span{
+                    color: #000000;
+                    margin-top: 10px;
+                }
+                >img{
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
