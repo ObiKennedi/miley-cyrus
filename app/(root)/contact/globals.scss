@@ -1,4 +1,4 @@
-.contact {
+.contact{
     position: relative;
     width: 100%;
     height: fit-content;
@@ -8,69 +8,65 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    >img {
+    >img{
         position: absolute;
         width: 100%;
         height: 100%;
         z-index: -1;
     }
-
-    >div {
+    >div{
         width: 50%;
         height: 100%;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
         @media (max-width:900px) {
-            width: 100%;
+            width: 90%;
+            padding: 12px;
         }
 
-        >p {
+        >p{
+            font-size: 22px;
             color: #FFF;
-            font-size: 20px;
         }
-
-        >form {
+        >form{
             width: 100%;
-            height: 95vh;
-            background: #FFFFFF67;
+            height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 15px 20px;
+            padding: 20px;
             box-shadow: 0 10px 30px #242400;
-
             @media (max-width:900px) {
-                width: 100%;
+                width: 85%;
             }
-
-            >div {
+            >div{
                 display: flex;
                 flex-direction: column;
-                width: 100%;
-                margin: auto;
-                gap: 10px;
-
-                >label {
+                gap: 5px;
+                >label{
+                    font-size: 22px;
+                    text-align: start;
                     color: #FFF;
-                    font-size: 21px;
                 }
-
-                >input {
-                    width: 100%;
+                >input{
                     height: 50px;
                     border: none;
-                    outline: solid 2px #A5A500;
+                }
+                >textarea{
+                    height: 100px;
+                    border: none;
+                    resize: none;
                 }
             }
-
-            >button {
+            >button{
                 height: 50px;
-                background: #A5A500;
                 border: none;
+                background: #000;
                 color: #FFF;
-                font-weight: 500;
                 font-size: 20px;
+                font-weight: 400;
             }
         }
     }
