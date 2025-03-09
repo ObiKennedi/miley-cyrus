@@ -34,8 +34,8 @@ const Home = () => {
             <div>
                 <Image
                     src={'/icons/hero.png'}
-                    width={300}
-                    height={300}
+                    width={1000}
+                    height={1000}
                     alt="hero"
                 />
             </div>

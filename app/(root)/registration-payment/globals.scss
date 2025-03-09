@@ -1,0 +1,106 @@
+.payment{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10px;
+    height: fit-content;
+    background: #000000;
+    @media (max-width:900px) {
+        flex-direction: column;
+    }
+    >div:first-child{
+        width: 40%;
+        height: 100%;
+        @media (max-width:900px) {
+            width: 100%;
+        }
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    >div:last-child{
+        width: 58%;
+        height: 100%;
+        @media (max-width:900px) {
+            width: 100%;
+            height: fit-content;
+        }
+        >h2{
+            color: #FFFF;
+            font-size: 24px;
+        }
+        >p{
+            color: #FFFF;
+            font-size: 17px;
+            text-align: left;
+        }
+        >div:nth-child(3){
+            width: 100%;
+            >h3{
+                color: #FFFF;
+                font-size: 21px;
+            }
+            >ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                >li{
+                    color: #FFFF;
+                    font-size: 20px;
+                }
+            }
+        }
+        >div:nth-child(4){
+            width: 100%;
+            >p{
+                color: #FFFF;
+                font-size: 18px;
+                text-align: start;
+            }
+            >div{
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                >img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+        >form{
+            width: 85%;
+            padding: 30px;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 10px 30px #242400;
+            border-radius: 5px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                >label{
+                    font-size: 20px;
+                    color: #FFFF;
+                }
+                >input{
+                    height: 50px;
+                    border: none;
+                    outline: 3px solid #FFFF01;
+                    color: #FFFF01;
+                    padding: 10px;
+                }
+            }
+            >button{
+                height: 50px;
+                padding: 10px;
+                border: none;
+                background: #FFF;
+                color: #000000;
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+}

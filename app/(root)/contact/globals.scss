@@ -1,0 +1,77 @@
+.contact {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    background: #000020B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    >div {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+
+        @media (max-width:900px) {
+            width: 100%;
+        }
+
+        >p {
+            color: #FFF;
+            font-size: 20px;
+        }
+
+        >form {
+            width: 100%;
+            height: 95vh;
+            background: #FFFFFF67;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px 20px;
+            box-shadow: 0 10px 30px #242400;
+
+            @media (max-width:900px) {
+                width: 100%;
+            }
+
+            >div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: auto;
+                gap: 10px;
+
+                >label {
+                    color: #FFF;
+                    font-size: 21px;
+                }
+
+                >input {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    outline: solid 2px #A5A500;
+                }
+            }
+
+            >button {
+                height: 50px;
+                background: #A5A500;
+                border: none;
+                color: #FFF;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,76 +1,38 @@
-form{
-    width: 47%;
-    height: fit-content;
-    border-radius: 5px;
-    margin: auto;
-    padding: 20px 5%;
+.form{
+  width: 40%;
+  height: 95vh;
+  background: #FFFFFF67;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 10px 30px #242400;
+  @media (max-width:900px) {
+    width: 100%;
+  }
+  >div{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background: #FFF;
-    @media (max-width:900px) {
-        width: 90%;
-        margin-top: 10px;
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    >label{
+      color: #FFF;
+      font-size: 21px;
     }
-    >h2{
-        font-size: 13px;
-        font-weight: 400;
+    >input{
+      width: 100%;
+      height: 50px;
+      border: none;
+      outline: solid 2px #A5A500;
     }
-    >div{
-        display: flex;
-        gap: 30px;
-        width: 100%;
-        @media (max-width:900px) {
-            flex-direction: column;
-        }
-        >div{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 100%;
-            @media (max-width:900px) {
-                width: 85%;
-            }
-            >p{
-                color: #FF0000;
-                font-size: 9px;
-            }
-            >div{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                width: 100%;
-                @media (max-width:900px) {
-                    flex-wrap: wrap;
-                }
-                >p{
-                    color: #FF0000;
-                    font-size: 9px;
-                }
-                >div{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    width: 100%;
-                    >label{
-                        font-size: 17px;
-                    }
-                    >input{
-                        width: 100%;
-                        padding: 10px;
-                    }
-                }
-            }
-            >div.upload{
-                flex-direction: column;
-            }
-        }
-    }
-    >button{
-        background: #000000;
-        color: #FFF;
-        border-radius: 5px;
-        border: none;
-        padding: 10px;
-    }
+  }
+  >button{
+    height: 50px;
+    background: #A5A500;
+    border: none;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+  }
 }
