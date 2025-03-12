@@ -57,21 +57,23 @@ const Foundation = () => {
                     <h4>Our Mission</h4>
                     <p>Our mission is to provide a safe, nurturing, and supportive environment for orphaned and vulnerable children. We aim to ensure that every child has access to education, healthcare, and opportunities for personal development. Each of our orphanages is staffed with dedicated professionals and volunteers committed to the well-being and growth of the children.</p>
                 </div>
-                <div>
-                    <h4>How You Can Help</h4>
-                    <p>Your support can make a significant impact on the lives of these children. There are several ways you can contribute:</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Donations: Provide funds for infrastructure improvements, educational materials, and healthcare.</li>
-                        <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
-                        <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
-                        <li>Volunteer Opportunities: Offer your time and skills to assist in various programs.</li>
-                        <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
-                    </ul>
-                    <Link href={'/registration-payment'}>
-                        <button>Make Donation</button>
-                    </Link>
+                <div className="emphasis">
+                    <div>
+                        <h4>How You Can Help</h4>
+                        <p>Your support can make a significant impact on the lives of these children. There are several ways you can contribute:</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Donations: Provide funds for infrastructure improvements, educational materials, and healthcare.</li>
+                            <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
+                            <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
+                            <li>Volunteer Opportunities: Offer your time and skills to assist in various programs.</li>
+                            <li>Sponsorship Programs: Sponsor a child,  Become an official sponsor of the Happy Smiley Group. (And receive incentives and profits as we go along this great journey together)</li>
+                        </ul>
+                        <Link href={'/registration-payment'}>
+                            <button>Make Donation</button>
+                        </Link>
+                    </div>
                 </div>
                 <div>
                     <p>We are more than happy to provide further details or answer any questions you may have. Please feel free to : <Link href={"/contact"}>Contact us</Link></p>

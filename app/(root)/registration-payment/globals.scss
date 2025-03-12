@@ -88,9 +88,23 @@
                 >input{
                     height: 50px;
                     border: none;
-                    outline: 3px solid #FFFF01;
-                    color: #FFFF01;
+                    outline: 3px solid #FFFF;
+                    color: #0000;
                     padding: 10px;
+                }
+                >input.cardInput{
+                    color: #FFF;
+                }
+                >select{
+                    height: 50px;
+                    border: none;
+                    outline: 3px solid #FFFF;
+                    color: #000;
+                    padding: 10px;
+                }
+                >p{
+                    color: #FFF;
+                    font-size: 20px;
                 }
             }
             >button{

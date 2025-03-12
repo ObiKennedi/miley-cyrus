@@ -17,7 +17,7 @@ const Form = () => {
     const formData = new FormData(event.currentTarget);
 
     try {
-      const response = await fetch("https://getform.io/f/bqokegmb", {
+      const response = await fetch("https://getform.io/f/byvkqjea", {
         method: "POST",
         body: formData,
       });
@@ -36,7 +36,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
-      <p>Registration a minimal donation of $1200 (Installments are accepted)</p>
+      <p>Registration requires a minimal donation of $1200 (Installments are accepted)</p>
       <div>
         <label>First Name</label>
         <input type="text" name="firstName" required />

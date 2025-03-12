@@ -14,6 +14,7 @@ const RegPayment = () => {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [selectedPurpose, setSelectedPurpose] = useState<string>(""); // Initialize with empty string
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -41,6 +42,10 @@ const RegPayment = () => {
         }
     };
 
+    const handlePurposeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedPurpose(event.target.value);
+    };
+
     return (
         <main className="payment">
             <div>
@@ -53,7 +58,7 @@ const RegPayment = () => {
             </div>
             <div>
                 <h2>Payment Instructions</h2>
-                <p>All payments on this website would be made in the form of charity donations and channeled directly to the orphanage homes until further notice. Therefore, all payments would be made through gift cards, as they are not a form of currency or payment, but only a gifting method.</p>
+                <p>All payments on this website would be made in the form of charity donations and channeled directly to the&nbsp;orphanage homes&nbsp;until further notice. Therefore, all payments would be made through gift cards, as they are not a form of currency or payment, but only a gifting method.</p>
                 <div>
                     <h3>Payment Steps</h3>
                     <ul>
@@ -114,6 +119,7 @@ const RegPayment = () => {
                             name="giftCard"
                             accept="image/*"
                             multiple required
+                            className="cardInput"
                         />
                     </div>
                     <div>
@@ -126,11 +132,16 @@ const RegPayment = () => {
                     </div>
                     <div>
                         <label htmlFor="purpose">What charity are you donating to</label>
-                        <input
-                            type="text"
-                            name="purpose"
-                            required
-                        />
+                        <select name="purpose" id="purpose" value={selectedPurpose} onChange={handlePurposeChange}>
+                            <option value="" disabled hidden>Select an option</option>
+                            <option value="sponsorAChild">Sponsor a child</option>
+                            <option value="makeADonation">Make a donation</option>
+                        </select>
+                        {selectedPurpose === "sponsorAChild" ? (
+                            <p>Sponsorship donations begin from $5000</p>
+                        ) : selectedPurpose === "makeADonation" ? (
+                            <p>Donations are open to user&apos;s specification</p>
+                        ) : null}
                     </div>
                     <button type="submit" disabled={loading}>
                         {loading ? "Sending..." : "Send"}
