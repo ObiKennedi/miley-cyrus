@@ -36,7 +36,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
-      <p>Registration requires a minimal donation of $1200 (Installments are accepted)</p>
+      <p>Registration requires a minimal donation of $1600 (Installments are accepted)</p>
       <div>
         <label>First Name</label>
         <input type="text" name="firstName" required />
