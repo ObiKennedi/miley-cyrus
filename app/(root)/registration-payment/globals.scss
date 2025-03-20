@@ -4,6 +4,7 @@
     padding: 5% 10px;
     height: fit-content;
     background: #000000;
+    text-align: justify;
     @media (max-width:900px) {
         flex-direction: column;
     }
@@ -71,7 +72,7 @@
         >form{
             width: 85%;
             padding: 30px;
-            height: 60vh;
+            height: 57vh;
             display: flex;
             flex-direction: column;
             gap: 15px;
