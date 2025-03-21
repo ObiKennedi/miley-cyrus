@@ -25,18 +25,22 @@
             gap: 30px;
 
             >h1 {
-                font-size: 35px;
+                font-size: 30px;
                 text-align: justify;
+
+                @media (max-width:900px) {
+                    font-size: 15px;
+                }
             }
 
             >div {
                 font-size: 17px;
-                width: 90%;
-                height: 12vh;
+                width: 70%;
+                height: 15vh;
                 text-align: justify;
                 @media (max-width:900px) {
                     width: 100%;
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
 
@@ -96,7 +100,7 @@
                     }
 
                     >p {
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 300;
                     }
                 }
@@ -129,7 +133,7 @@
                 }
 
                 >p {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 300;
                 }
             }
