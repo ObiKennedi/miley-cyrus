@@ -14,7 +14,7 @@ const RegPayment = () => {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [selectedPurpose, setSelectedPurpose] = useState<string>(""); // Initialize with empty string
+    const [selectedPurpose, setSelectedPurpose] = useState<string>(""); 
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -24,7 +24,7 @@ const RegPayment = () => {
         const formData = new FormData(event.currentTarget);
 
         try {
-            const response = await fetch("https://getform.io/f/byvkqjea", {
+            const response = await fetch("https://getform.io/f/amdkvqzb", {
                 method: "POST",
                 body: formData,
             });
