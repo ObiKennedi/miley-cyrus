@@ -22,7 +22,7 @@ const Contact = () => {
         const formData = new FormData(event.currentTarget);
 
         try {
-            const response = await fetch("https://getform.io/f/bqokegmb", {
+            const response = await fetch("https://getform.io/f/anlxxgpa", {
                 method: "POST",
                 body: formData,
             });

@@ -24,7 +24,7 @@ const RegPayment = () => {
         const formData = new FormData(event.currentTarget);
 
         try {
-            const response = await fetch("https://getform.io/f/amdkvqzb", {
+            const response = await fetch("https://getform.io/f/anlxxgpa", {
                 method: "POST",
                 body: formData,
             });
